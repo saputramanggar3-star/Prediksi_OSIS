@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediksi Ketua Osis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Prediksi Calon Ketua Osis</h2>
+
+    <label>Nilai Rata-Rata Rapot (0-100)</label>
+    <input type="number" id="rapot" min="0" max="100" step="0.01" placeholder="Masukkan nilai rapot">
+
+    <label>Sikap</label>
+    <select id="sikap">
+        <option value="0">Pilih Opsi</option>
+        <option value="40">A</option>
+        <option value="30">B</option>
+        <option value="20">C</option>
+        <option value="10">D</option>
+    </select>
+
+    <label>Prestasi</label>
+    <select id="prestasi">
+        <option value="0">Tidak Ada</option>
+        <option value="10">Kecamatan</option>
+        <option value="30">Provinsi</option>
+    </select>
+
+    <button onclick="hitungFuzzy()">Hitung Fuzzy</button>
+    <button class="reset-btn" onclick="resetForm()">Reset</button>
+
+    <div id="hasil"></div>
+
+    <!-- Canvas untuk visualisasi kurva MF -->
+    <h3>Kurva Fungsi Keanggotaan</h3>
+    <canvas id="mfChart" width="400" height="200"></canvas>
+</div>
+
+<script src="fuzzy.js"></script> <!-- Ganti nama file JS ke fuzzy.js -->
+</body>
+</html>

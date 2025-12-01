@@ -1,0 +1,81 @@
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background: #f5f7fa; 
+    padding: 40px; 
+}
+    
+.container { 
+    max-width: 450px; 
+    margin: auto; 
+    background: white; 
+    padding: 25px; 
+    border-radius: 18px; 
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1); 
+}
+    
+h2 { 
+    text-align: center; 
+    font-weight: 600; 
+    margin-bottom: 20px; 
+    color: #333; 
+}
+    
+label { 
+    font-weight: 500; 
+    margin-top: 12px; 
+    display: block; 
+}
+
+select, input { 
+    width: 100%; 
+    padding: 12px; 
+    border-radius: 12px; 
+    border: 1px solid #ccc; 
+    margin-top: 6px; 
+    font-size: 14px; 
+}
+
+select:focus, input:focus { 
+    outline: none; 
+    border-color: #4c8bff; 
+    box-shadow: 0 0 5px rgba(76,139,255,0.4); 
+}
+
+button { 
+    width: 100%; 
+    padding: 14px; 
+    background: linear-gradient(45deg,#4c8bff,#6a5af9); 
+    border: none; 
+    color: white; 
+    font-size: 16px; 
+    font-weight: 600; 
+    border-radius: 12px; 
+    margin-top: 20px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+button:hover { 
+    transform: scale(1.03); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+}
+
+.reset-btn {
+    background: #ff4c4c;
+    margin-top: 10px;
+}
+
+.reset-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(255,0,0,0.2);
+}
+
+#hasil { 
+    margin-top: 12px; 
+    padding: 20px; 
+    background: #eef3ff; 
+    border-radius: 12px; 
+    font-size: 18px; 
+    font-weight: 500; 
+    text-align: center; 
+}
