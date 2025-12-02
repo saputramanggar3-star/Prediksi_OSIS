@@ -1,12 +1,19 @@
 const mysql = require('mysql2');
+require('dotenv').config();
+
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root', // Ganti dengan user MySQL kamu
-    password: '', // Ganti dengan password
-    database: 'predict_db'
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME
 });
-db.connect((err) => {
-    if (err) throw err;
-    console.log('Connected to MySQL');
+
+db.connect(err => {
+  if (err) {
+    console.error('Database connection error:', err);
+    return;
+  }
+  console.log('Database connected!');
 });
+
 module.exports = db;
